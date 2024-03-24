@@ -22,7 +22,7 @@ def predict():
     if imagefile.filename == '':
         return render_template('index.html', transformed_image=None)
 
-    image_path = "./images/" + imagefile.filename
+    image_path = "app/images/" + imagefile.filename
     imagefile.save(image_path)
 
     to_monet = request.form.get('to_monet', False)
@@ -38,4 +38,4 @@ def predict():
     
 
 if __name__ == '__main__':
-    app.run(port=3000, debug=True)
+    app.run(port=3000, debug=False)
