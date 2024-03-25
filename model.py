@@ -69,8 +69,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 gen_R = Generator(img_channels=3, num_residuals=9).to(device)
 gen_P = Generator(img_channels=3, num_residuals=9).to(device)
 
-gen_R.load_state_dict(torch.load("app/paint_to_real3.pth"))
-gen_P.load_state_dict(torch.load("app/real_to_paint3.pth"))
+gen_R.load_state_dict(torch.load("paint_to_real3.pth"))
+gen_P.load_state_dict(torch.load("real_to_paint3.pth"))
 gen_P.eval()
 gen_R.eval()
 
