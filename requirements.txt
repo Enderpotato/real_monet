@@ -1,4 +1,6 @@
-flask==3.0.0
-albumentations==1.0.3
-torch==1.10.0
-torchvision==0.11.1
+albumentations
+flask
+torch
+matplotlib
+pillow
+numpy
